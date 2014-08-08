@@ -20,7 +20,13 @@ public class ConfigData {
 
 		//Debug logging
 		for (String str : this.kingAttack.getConfig().getKeys(false)) {
-			System.out.println(str + ": " + kingAttack.getConfig().getDouble(str));
+			//Check if its a string
+			//Only string is the world name
+			if (str.equalsIgnoreCase("WorldName")) {
+				System.out.println("WorldName: " + kingAttack.getConfig().getString(str));
+			} else {
+				System.out.println(str + ": " + kingAttack.getConfig().getDouble(str));
+			}
 		}
 
 		//These are the X and Z values for the boundaries

@@ -8,10 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cd537ec4-d84b-4896-b1c7-081460722086" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config.yml" afterPath="$PROJECT_DIR$/src/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Luke.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Luke.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="KingAttack.iws" />
@@ -48,29 +47,38 @@
       <file leaf-file-name="GameManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3360" max-vertical-offset="4245">
-              <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3303" max-vertical-offset="5220">
+              <caret line="257" column="22" selection-start-line="257" selection-start-column="22" selection-end-line="257" selection-end-column="22" />
               <folding>
-                <element signature="e#441#453#0" expanded="true" />
-                <element signature="e#514#526#0" expanded="true" />
-                <element signature="e#594#606#0" expanded="true" />
-                <element signature="e#5438#5620#0" expanded="true" />
-                <element signature="e#5615#5616#0" expanded="true" />
-                <element signature="e#8981#8982#0" expanded="true" />
-                <element signature="e#9013#9014#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#491#503#0" expanded="true" />
+                <element signature="e#564#576#0" expanded="true" />
+                <element signature="e#644#656#0" expanded="true" />
+                <element signature="e#6186#6368#0" expanded="true" />
+                <element signature="e#6363#6364#0" expanded="true" />
+                <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
+                <element signature="method#getColor#0;class#GameManager#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigData.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Events.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7794118" vertical-offset="333" max-vertical-offset="990">
+              <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigData.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42404008" vertical-offset="436" max-vertical-offset="1260">
-              <caret line="46" column="78" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="78" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="721" max-vertical-offset="1320">
+              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,24 +96,9 @@
       <file leaf-file-name="Map.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="1140">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="1530">
               <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Events.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-              <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
-              <folding>
-                <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#658#659#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -113,7 +106,7 @@
       <file leaf-file-name="GamePlayer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GamePlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="750">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
               <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
               <folding />
             </state>
@@ -142,12 +135,12 @@
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GamePlayer.java" />
         <option value="$PROJECT_DIR$/plugin.yml" />
         <option value="$PROJECT_DIR$/Config.yml" />
-        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java" />
         <option value="$PROJECT_DIR$/src/config.yml" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" />
-        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" />
+        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" />
+        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java" />
       </list>
     </option>
   </component>
@@ -239,8 +232,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -320,19 +313,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -358,6 +338,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -442,7 +435,11 @@
       <created>1407519933301</created>
       <updated>1407519933301</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="World Regen works!">
+      <created>1407521626211</created>
+      <updated>1407521626211</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -454,13 +451,12 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -470,8 +466,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -492,7 +489,8 @@
     <MESSAGE value="Added loading maps from config" />
     <MESSAGE value="Correctly setup config loading" />
     <MESSAGE value="Games can now reset! woohoo!&#10;World reset added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Games can now reset! woohoo!&#10;World reset added" />
+    <MESSAGE value="World Regen works!" />
+    <option name="LAST_COMMIT_MESSAGE" value="World Regen works!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -502,6 +500,71 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="600">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3258" max-vertical-offset="4950">
+          <caret line="352" column="36" selection-start-line="352" selection-start-column="36" selection-end-line="352" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#491#503#0" expanded="true" />
+            <element signature="e#564#576#0" expanded="true" />
+            <element signature="e#644#656#0" expanded="true" />
+            <element signature="e#6186#6368#0" expanded="true" />
+            <element signature="e#6363#6364#0" expanded="true" />
+            <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
+            <element signature="method#getColor#0;class#GameManager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="1350">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="1530">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="615">
+          <caret line="31" column="91" selection-start-line="31" selection-start-column="91" selection-end-line="31" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GamePlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="900">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="570">
@@ -514,12 +577,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="420">
           <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -527,9 +585,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="600">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -538,13 +594,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2595">
           <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
-            <element signature="e#441#453#0" expanded="true" />
-            <element signature="e#514#526#0" expanded="true" />
-            <element signature="e#594#606#0" expanded="true" />
-            <element signature="e#5438#5620#0" expanded="true" />
-            <element signature="e#5615#5616#0" expanded="true" />
-            <element signature="e#8981#8982#0" expanded="true" />
-            <element signature="e#9013#9014#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#491#503#0" expanded="true" />
+            <element signature="e#564#576#0" expanded="true" />
+            <element signature="e#644#656#0" expanded="true" />
+            <element signature="e#6186#6368#0" expanded="true" />
+            <element signature="e#6363#6364#0" expanded="true" />
+            <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
+            <element signature="method#getColor#0;class#GameManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -577,12 +634,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="420">
           <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -590,9 +642,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="600">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -601,13 +651,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2595">
           <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
-            <element signature="e#441#453#0" expanded="true" />
-            <element signature="e#514#526#0" expanded="true" />
-            <element signature="e#594#606#0" expanded="true" />
-            <element signature="e#5438#5620#0" expanded="true" />
-            <element signature="e#5615#5616#0" expanded="true" />
-            <element signature="e#8981#8982#0" expanded="true" />
-            <element signature="e#9013#9014#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#491#503#0" expanded="true" />
+            <element signature="e#564#576#0" expanded="true" />
+            <element signature="e#644#656#0" expanded="true" />
+            <element signature="e#6186#6368#0" expanded="true" />
+            <element signature="e#6363#6364#0" expanded="true" />
+            <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
+            <element signature="method#getColor#0;class#GameManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -641,13 +692,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="2445">
           <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
           <folding>
-            <element signature="e#441#453#0" expanded="true" />
-            <element signature="e#514#526#0" expanded="true" />
-            <element signature="e#594#606#0" expanded="true" />
-            <element signature="e#5438#5620#0" expanded="true" />
-            <element signature="e#5615#5616#0" expanded="true" />
-            <element signature="e#8981#8982#0" expanded="true" />
-            <element signature="e#9013#9014#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#491#503#0" expanded="true" />
+            <element signature="e#564#576#0" expanded="true" />
+            <element signature="e#644#656#0" expanded="true" />
+            <element signature="e#6186#6368#0" expanded="true" />
+            <element signature="e#6363#6364#0" expanded="true" />
+            <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
+            <element signature="method#getColor#0;class#GameManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -681,13 +733,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="795">
           <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
           <folding>
-            <element signature="e#441#453#0" expanded="true" />
-            <element signature="e#514#526#0" expanded="true" />
-            <element signature="e#594#606#0" expanded="true" />
-            <element signature="e#5438#5620#0" expanded="true" />
-            <element signature="e#5615#5616#0" expanded="true" />
-            <element signature="e#8981#8982#0" expanded="true" />
-            <element signature="e#9013#9014#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#491#503#0" expanded="true" />
+            <element signature="e#564#576#0" expanded="true" />
+            <element signature="e#644#656#0" expanded="true" />
+            <element signature="e#6186#6368#0" expanded="true" />
+            <element signature="e#6363#6364#0" expanded="true" />
+            <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
+            <element signature="method#getColor#0;class#GameManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -704,28 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
           <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GamePlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="900">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
-          <folding>
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -745,19 +776,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java">
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3360" max-vertical-offset="4245">
-          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
-          <folding>
-            <element signature="e#441#453#0" expanded="true" />
-            <element signature="e#514#526#0" expanded="true" />
-            <element signature="e#594#606#0" expanded="true" />
-            <element signature="e#5438#5620#0" expanded="true" />
-            <element signature="e#5615#5616#0" expanded="true" />
-            <element signature="e#8981#8982#0" expanded="true" />
-            <element signature="e#9013#9014#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="1350">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GamePlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="900">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -769,13 +800,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java">
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42404008" vertical-offset="436" max-vertical-offset="1260">
-          <caret line="46" column="78" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3303" max-vertical-offset="5220">
+          <caret line="257" column="22" selection-start-line="257" selection-start-column="22" selection-end-line="257" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#491#503#0" expanded="true" />
+            <element signature="e#564#576#0" expanded="true" />
+            <element signature="e#644#656#0" expanded="true" />
+            <element signature="e#6186#6368#0" expanded="true" />
+            <element signature="e#6363#6364#0" expanded="true" />
+            <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
+            <element signature="method#getColor#0;class#GameManager#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7794118" vertical-offset="333" max-vertical-offset="990">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

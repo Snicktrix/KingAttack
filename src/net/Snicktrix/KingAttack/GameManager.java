@@ -1,6 +1,9 @@
 package net.Snicktrix.KingAttack;
 
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.WorldCreator;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
@@ -10,6 +13,8 @@ import java.util.ArrayList;
  * Created by Luke on 8/6/14.
  */
 public class GameManager {
+	private KingAttack kingAttack;
+
     private boolean gameStarted;
     private ArrayList<GamePlayer> blueTeam = new ArrayList<GamePlayer>();
     private ArrayList<GamePlayer> redTeam = new ArrayList<GamePlayer>();
@@ -20,7 +25,8 @@ public class GameManager {
     private int minimumGameSize;
     private int maxGameSize;
 
-    public GameManager(Map map, int minimumGameSize, int maxGameSize) {
+    public GameManager(KingAttack kingAttack, Map map, int minimumGameSize, int maxGameSize) {
+		this.kingAttack = kingAttack;
         this.map = map;
 		this.minimumGameSize = minimumGameSize;
 		this.maxGameSize = maxGameSize;
@@ -97,6 +103,7 @@ public class GameManager {
 
     //Use to start the actual game
     private void startGame() {
+		debug(ChatColor.RED + "STARTING GAME");
         gameStarted = true;
 
         //Make first player a King
@@ -127,6 +134,72 @@ public class GameManager {
         }
     }
 
+	public void leaveGame(Player player) {
+		//Get the gamePlayer
+		GamePlayer gamePlayer = getGamePlayerFromPlayer(player);
+		//Remove from our tracking list
+		gamePlayerList.remove(gamePlayer);
+
+		//Remove player from team
+		if (blueTeam.contains(gamePlayer)) {
+			blueTeam.remove(gamePlayer);
+		} else if (redTeam.contains(gamePlayer)) {
+			redTeam.remove(gamePlayer);
+		}
+
+		if (gamePlayer.getType() == GamePlayer.Type.King) {
+			//Make this players team lose
+			endGameWithLosingTeam(gamePlayer.getTeam());
+		}
+
+	}
+
+	private void endGameWithLosingTeam(GamePlayer.Team losingTeam) {
+		GamePlayer.Team winningTeam;
+
+		if (losingTeam == GamePlayer.Team.Blue) {
+			winningTeam = GamePlayer.Team.Red;
+		} else {
+			winningTeam = GamePlayer.Team.Blue;
+		}
+
+		for (GamePlayer gamePlayer : this.gamePlayerList) {
+			if (gamePlayer.getTeam() == winningTeam) {
+				gamePlayer.getPlayer().sendMessage(ChatColor.GREEN + "Your team won the game!");
+			} else {
+				gamePlayer.getPlayer().sendMessage(ChatColor.RED + "Your team lost the game!");
+			}
+		}
+
+		Bukkit.getScheduler().scheduleSyncDelayedTask(kingAttack, new Runnable() {
+			@Override
+			public void run() {
+				for (Player player : Bukkit.getOnlinePlayers()) {
+					player.kickPlayer("Restarting Game");
+					resetGame();
+				}
+			}
+		}, 3 * 20);
+
+	}
+
+	private void resetGame() {
+		//Clear all our lists
+		this.blueTeam = new ArrayList<GamePlayer>();
+		this.redTeam = new ArrayList<GamePlayer>();
+		this.gamePlayerList = new ArrayList<GamePlayer>();
+		this.gameStarted = false;
+
+		//Todo add World Name to config
+		//Unload world
+
+		Bukkit.unloadWorld("World", false);
+
+		//Load world
+		Bukkit.getServer().createWorld(new WorldCreator("World"));
+	}
+
+
     //*************************************************//
 
     //******* BLUE PLAYERS *******//
@@ -134,6 +207,9 @@ public class GameManager {
     //Blue Knight
     private void setupBlueKnight(GamePlayer gamePlayer) {
         gamePlayer.setType(GamePlayer.Type.Knight);
+
+		gamePlayer.getPlayer().getInventory().clear();
+		gamePlayer.getPlayer().getInventory().setArmorContents(null);
 
         gamePlayer.getPlayer().getInventory().setChestplate(new ItemStack(Material.LEATHER_CHESTPLATE));
 		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.LAPIS_ORE));
@@ -144,6 +220,9 @@ public class GameManager {
     //Blue King
     private void setupBlueKing(GamePlayer gamePlayer) {
         gamePlayer.setType(GamePlayer.Type.King);
+
+		gamePlayer.getPlayer().getInventory().clear();
+		gamePlayer.getPlayer().getInventory().setArmorContents(null);
 
         gamePlayer.getPlayer().getInventory().setChestplate(new ItemStack(Material.DIAMOND_CHESTPLATE));
 		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.LAPIS_BLOCK));
@@ -157,6 +236,9 @@ public class GameManager {
     private void setupRedKnight(GamePlayer gamePlayer) {
         gamePlayer.setType(GamePlayer.Type.Knight);
 
+		gamePlayer.getPlayer().getInventory().clear();
+		gamePlayer.getPlayer().getInventory().setArmorContents(null);
+
         gamePlayer.getPlayer().getInventory().setChestplate(new ItemStack(Material.IRON_CHESTPLATE));
 		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.REDSTONE));
 		gamePlayer.getPlayer().teleport(map.getRedTeamSpawn());
@@ -168,6 +250,9 @@ public class GameManager {
     private void setupRedKing(GamePlayer gamePlayer) {
         gamePlayer.setType(GamePlayer.Type.King);
 
+		gamePlayer.getPlayer().getInventory().clear();
+		gamePlayer.getPlayer().getInventory().setArmorContents(null);
+
         gamePlayer.getPlayer().getInventory().setChestplate(new ItemStack(Material.DIAMOND_CHESTPLATE));
 		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.REDSTONE_BLOCK));
         gamePlayer.getPlayer().teleport(map.getRedTeamSpawn());
@@ -177,6 +262,10 @@ public class GameManager {
     //******* SPECTATOR *******//
 
     private void setupSpectator(GamePlayer gamePlayer) {
+
+		gamePlayer.getPlayer().getInventory().clear();
+		gamePlayer.getPlayer().getInventory().setArmorContents(null);
+
         gamePlayer.getPlayer().teleport(map.getSpectatorSpawn());
         gamePlayer.getPlayer().sendMessage("You are a spectator");
     }
@@ -187,6 +276,8 @@ public class GameManager {
     void debug(String msg) {
         System.out.println(msg);
     }
+
+
 
 
 }

@@ -17,6 +17,11 @@ public class KingAttack extends JavaPlugin {
         this.events = new Events(this);
         Bukkit.getPluginManager().registerEvents(events, this);
 
+		//Make sure world does not auto save
+		//Todo change to config named world
+		Bukkit.getWorld("World").setAutoSave(false);
+
+		//Config preparation
 		this.saveDefaultConfig();
 
         //Next we will setup our config
@@ -24,7 +29,7 @@ public class KingAttack extends JavaPlugin {
 
         Map map = this.configData.generateMapFromConfig();
 
-		this.gameManager = new GameManager(map, 2, 10);
+		this.gameManager = new GameManager(this, map, 2, 10);
 
         //Finished!
         System.out.println("KingAttack successfully loaded");

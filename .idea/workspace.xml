@@ -7,8 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd537ec4-d84b-4896-b1c7-081460722086" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -37,63 +36,8 @@
       <file leaf-file-name="KingAttack.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8149406" vertical-offset="0" max-vertical-offset="589">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plugin.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugin.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfigData.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1125">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="22" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Events.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-              <folding>
-                <element signature="e#424#425#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Map.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="93" max-vertical-offset="885">
-              <caret line="25" column="236" selection-start-line="25" selection-start-column="236" selection-end-line="25" selection-end-column="236" />
+            <state vertical-scroll-proportion="0.49019608" vertical-offset="0" max-vertical-offset="645">
+              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -102,12 +46,29 @@
       <file leaf-file-name="GameManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.230769" vertical-offset="75" max-vertical-offset="2850">
-              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2325" max-vertical-offset="4170">
+              <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
               <folding>
-                <element signature="e#321#333#0" expanded="true" />
-                <element signature="e#394#406#0" expanded="true" />
-                <element signature="e#474#486#0" expanded="true" />
+                <element signature="e#441#453#0" expanded="true" />
+                <element signature="e#514#526#0" expanded="true" />
+                <element signature="e#594#606#0" expanded="true" />
+                <element signature="e#5438#5620#0" expanded="true" />
+                <element signature="e#5615#5616#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Events.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+              <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+              <folding>
+                <element signature="e#472#473#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
+                <element signature="e#658#659#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,7 +77,7 @@
       <file leaf-file-name="GamePlayer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GamePlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="900">
+            <state vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="750">
               <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
               <folding />
             </state>
@@ -144,11 +105,11 @@
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/MapManager.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GamePlayer.java" />
         <option value="$PROJECT_DIR$/plugin.yml" />
-        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" />
         <option value="$PROJECT_DIR$/Config.yml" />
         <option value="$PROJECT_DIR$/src/config.yml" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" />
+        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java" />
       </list>
@@ -437,7 +398,11 @@
       <created>1407513849591</created>
       <updated>1407513849591</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Correctly setup config loading">
+      <created>1407516790899</created>
+      <updated>1407516790899</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -455,7 +420,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -485,7 +450,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Added loading maps from config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added loading maps from config" />
+    <MESSAGE value="Correctly setup config loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correctly setup config loading" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -508,8 +474,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="420">
           <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
           <folding>
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -529,9 +497,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2595">
           <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
-            <element signature="e#321#333#0" expanded="true" />
-            <element signature="e#394#406#0" expanded="true" />
-            <element signature="e#474#486#0" expanded="true" />
+            <element signature="e#441#453#0" expanded="true" />
+            <element signature="e#514#526#0" expanded="true" />
+            <element signature="e#594#606#0" expanded="true" />
+            <element signature="e#5438#5620#0" expanded="true" />
+            <element signature="e#5615#5616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -565,8 +535,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="420">
           <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
           <folding>
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -586,9 +558,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2595">
           <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
-            <element signature="e#321#333#0" expanded="true" />
-            <element signature="e#394#406#0" expanded="true" />
-            <element signature="e#474#486#0" expanded="true" />
+            <element signature="e#441#453#0" expanded="true" />
+            <element signature="e#514#526#0" expanded="true" />
+            <element signature="e#594#606#0" expanded="true" />
+            <element signature="e#5438#5620#0" expanded="true" />
+            <element signature="e#5615#5616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -622,9 +596,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="2445">
           <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
           <folding>
-            <element signature="e#321#333#0" expanded="true" />
-            <element signature="e#394#406#0" expanded="true" />
-            <element signature="e#474#486#0" expanded="true" />
+            <element signature="e#441#453#0" expanded="true" />
+            <element signature="e#514#526#0" expanded="true" />
+            <element signature="e#594#606#0" expanded="true" />
+            <element signature="e#5438#5620#0" expanded="true" />
+            <element signature="e#5615#5616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -658,9 +634,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="795">
           <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
           <folding>
-            <element signature="e#321#333#0" expanded="true" />
-            <element signature="e#394#406#0" expanded="true" />
-            <element signature="e#474#486#0" expanded="true" />
+            <element signature="e#441#453#0" expanded="true" />
+            <element signature="e#514#526#0" expanded="true" />
+            <element signature="e#594#606#0" expanded="true" />
+            <element signature="e#5438#5620#0" expanded="true" />
+            <element signature="e#5615#5616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -673,14 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GamePlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="900">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="885">
@@ -689,14 +659,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java">
+    <entry file="file://$PROJECT_DIR$/src/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-          <folding>
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -704,14 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
           <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -726,22 +685,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GamePlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="900">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+          <folding>
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.230769" vertical-offset="75" max-vertical-offset="2850">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2325" max-vertical-offset="4170">
+          <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
           <folding>
-            <element signature="e#321#333#0" expanded="true" />
-            <element signature="e#394#406#0" expanded="true" />
-            <element signature="e#474#486#0" expanded="true" />
+            <element signature="e#441#453#0" expanded="true" />
+            <element signature="e#514#526#0" expanded="true" />
+            <element signature="e#594#606#0" expanded="true" />
+            <element signature="e#5438#5620#0" expanded="true" />
+            <element signature="e#5615#5616#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8149406" vertical-offset="0" max-vertical-offset="589">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.49019608" vertical-offset="0" max-vertical-offset="645">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
           <folding />
         </state>
       </provider>

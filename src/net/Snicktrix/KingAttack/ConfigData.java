@@ -33,17 +33,11 @@ public class ConfigData {
 		//We will use these to calculate team areas
 		String worldName = this.kingAttack.getConfig().getString("WorldName");
 
-		double blueEdge1X = this.kingAttack.getConfig().getDouble("BlueEdge1X");
-		double blueEdge1Z = this.kingAttack.getConfig().getDouble("BlueEdge1Z");
+		double buildEdge1X = this.kingAttack.getConfig().getDouble("BuildEdge1X");
+		double buildEdge1Z = this.kingAttack.getConfig().getDouble("BuildEdge1Z");
 
-		double blueEdge2X = this.kingAttack.getConfig().getDouble("BlueEdge2X");
-		double blueEdge2Z = this.kingAttack.getConfig().getDouble("BlueEdge2Z");
-
-		double redEdge1X = this.kingAttack.getConfig().getDouble("RedEdge1X");
-		double redEdge1Z = this.kingAttack.getConfig().getDouble("RedEdge1Z");
-
-		double redEdge2X = this.kingAttack.getConfig().getDouble("RedEdge2X");
-		double redEdge2Z = this.kingAttack.getConfig().getDouble("RedEdge2Z");
+		double buildEdge2X = this.kingAttack.getConfig().getDouble("BuildEdge2X");
+		double buildEdge2Z = this.kingAttack.getConfig().getDouble("BuildEdge2Z");
 
 		//Spawn Points
 		double blueSpawnX = this.kingAttack.getConfig().getDouble("BlueSpawnX");
@@ -71,8 +65,7 @@ public class ConfigData {
 		Location spectatorSpawn = new Location(Bukkit.getWorld(worldName), spectatorSpawnX, spectatorSpawnY, spectatorSpawnZ);
 
 		//Now create a map object
-		Map map = new Map(worldName, blueTeamSpawn, redTeamSpawn, blueEdge1X, blueEdge1Z, blueEdge2X, blueEdge2Z, redEdge1X, redEdge1Z
-				, redEdge2X, redEdge2Z, spectatorSpawn);
+		Map map = new Map(worldName, blueTeamSpawn, redTeamSpawn, buildEdge1X, buildEdge1Z, buildEdge2X, buildEdge2Z, spectatorSpawn);
 
 		//Finally, lets return the map
 		return map;

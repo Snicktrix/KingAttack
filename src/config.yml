@@ -1,16 +1,11 @@
 WorldName: 'Battle'
 
-BlueEdge1X: 5
-BlueEdge1Z: 5
+BuildEdge1X: 5
+BuildEdge1Z: 5
 
-BlueEdge2X: 7
-BlueEdge2Z: 10
+BuildEdge2X: 7
+BuildEdge2Z: 10
 
-RedEdge1X: -5
-RedEdge1Z: -5
-
-RedEdge2X: -7
-RedEdge2Z: -10
 
 BlueSpawnX: 6
 BlueSpawnY: 5

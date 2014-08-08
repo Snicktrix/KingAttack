@@ -10,15 +10,17 @@ public class ConfigData {
     private KingAttack kingAttack;
 
     public ConfigData (KingAttack kingAttack) {
-        this.kingAttack = this.kingAttack;
+        this.kingAttack = kingAttack;
 
     }
 
 
     public Map generateMapFromConfig() {
-        //Set up the config
-        this.kingAttack.getConfig().options().copyDefaults(true);
-        this.kingAttack.saveDefaultConfig();
+
+		//Debug logging
+		for (String str : this.kingAttack.getConfig().getKeys(false)) {
+			System.out.println(str + ": " + kingAttack.getConfig().getDouble(str));
+		}
 
 		//These are the X and Z values for the boundaries
 		//We will use these to calculate team areas

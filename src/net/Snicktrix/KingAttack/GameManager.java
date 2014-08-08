@@ -20,8 +20,10 @@ public class GameManager {
     private int minimumGameSize;
     private int maxGameSize;
 
-    public GameManager(Map map) {
+    public GameManager(Map map, int minimumGameSize, int maxGameSize) {
         this.map = map;
+		this.minimumGameSize = minimumGameSize;
+		this.maxGameSize = maxGameSize;
     }
 
     public void JoinGame(Player player) {

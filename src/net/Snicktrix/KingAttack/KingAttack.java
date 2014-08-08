@@ -17,12 +17,14 @@ public class KingAttack extends JavaPlugin {
         this.events = new Events(this);
         Bukkit.getPluginManager().registerEvents(events, this);
 
-        //Next we will setup our config l
+		this.saveDefaultConfig();
+
+        //Next we will setup our config
         this.configData = new ConfigData(this);
 
         Map map = this.configData.generateMapFromConfig();
 
-		this.gameManager = new GameManager(map);
+		this.gameManager = new GameManager(map, 2, 10);
 
         //Finished!
         System.out.println("KingAttack successfully loaded");

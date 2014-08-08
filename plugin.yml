@@ -1,0 +1,5 @@
+name: KingAttack
+main: net.Snicktrix.KingAttack.KingAttack
+author: Snicktrix
+version: 1.0
+description: Defend your King!

@@ -29,6 +29,14 @@ public class GameManager {
         GamePlayer gamePlayer = new GamePlayer(player, GamePlayer.Type.Spectator, findTeam());
         this.gamePlayerList.add(gamePlayer);
 
+		//Add them to the team lists
+		if (gamePlayer.getTeam() == GamePlayer.Team.Blue) {
+			blueTeam.add(gamePlayer);
+		} else if (gamePlayer.getTeam() == GamePlayer.Team.Red) {
+			redTeam.add(gamePlayer);
+		}
+
+		//Now check if we should start the game or not
         if (gameStarted) {
             joinStartedGame(gamePlayer);
         } else {
@@ -39,6 +47,7 @@ public class GameManager {
                 //Setup the player as a spectator
                 setupSpectator(gamePlayer);
             }
+			//StartGame() will auto assign this player
         }
     }
 
@@ -125,6 +134,7 @@ public class GameManager {
         gamePlayer.setType(GamePlayer.Type.Knight);
 
         gamePlayer.getPlayer().getInventory().setChestplate(new ItemStack(Material.LEATHER_CHESTPLATE));
+		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.LAPIS_ORE));
         gamePlayer.getPlayer().teleport(map.getBlueTeamSpawn());
         gamePlayer.getPlayer().sendMessage("You are a blue Knight");
     }
@@ -134,6 +144,7 @@ public class GameManager {
         gamePlayer.setType(GamePlayer.Type.King);
 
         gamePlayer.getPlayer().getInventory().setChestplate(new ItemStack(Material.DIAMOND_CHESTPLATE));
+		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.LAPIS_BLOCK));
         gamePlayer.getPlayer().teleport(map.getBlueTeamSpawn());
         gamePlayer.getPlayer().sendMessage("You are a blue King");
     }
@@ -145,7 +156,8 @@ public class GameManager {
         gamePlayer.setType(GamePlayer.Type.Knight);
 
         gamePlayer.getPlayer().getInventory().setChestplate(new ItemStack(Material.IRON_CHESTPLATE));
-        gamePlayer.getPlayer().teleport(map.getRedTeamSpawn());
+		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.REDSTONE));
+		gamePlayer.getPlayer().teleport(map.getRedTeamSpawn());
         gamePlayer.getPlayer().sendMessage("You are a red Knight");
 		gamePlayer.getPlayer();
     }
@@ -155,6 +167,7 @@ public class GameManager {
         gamePlayer.setType(GamePlayer.Type.King);
 
         gamePlayer.getPlayer().getInventory().setChestplate(new ItemStack(Material.DIAMOND_CHESTPLATE));
+		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.REDSTONE_BLOCK));
         gamePlayer.getPlayer().teleport(map.getRedTeamSpawn());
         gamePlayer.getPlayer().sendMessage("You are a red King");
     }

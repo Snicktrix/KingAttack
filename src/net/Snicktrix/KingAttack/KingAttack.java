@@ -20,10 +20,9 @@ public class KingAttack extends JavaPlugin {
         //Next we will setup our config l
         this.configData = new ConfigData(this);
 
-        //TODO Pull Map Details from config
-        //Make sure to use ConfigData load method
+        Map map = this.configData.generateMapFromConfig();
 
-        //TODO Create gameManager instance with new Map
+		this.gameManager = new GameManager(map);
 
         //Finished!
         System.out.println("KingAttack successfully loaded");

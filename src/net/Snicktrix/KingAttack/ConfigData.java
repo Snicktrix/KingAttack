@@ -2,6 +2,7 @@ package net.Snicktrix.KingAttack;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
+import org.bukkit.WorldCreator;
 
 /**
  * Legacy Config Class made by Luke on 8/1/14.
@@ -24,6 +25,8 @@ public class ConfigData {
 
 		//These are the X and Z values for the boundaries
 		//We will use these to calculate team areas
+		String worldName = this.kingAttack.getConfig().getString("WorldName");
+
 		double blueEdge1X = this.kingAttack.getConfig().getDouble("BlueEdge1X");
 		double blueEdge1Z = this.kingAttack.getConfig().getDouble("BlueEdge1Z");
 
@@ -49,14 +52,20 @@ public class ConfigData {
 		double spectatorSpawnY = this.kingAttack.getConfig().getDouble("SpectatorSpawnY");
 		double spectatorSpawnZ = this.kingAttack.getConfig().getDouble("SpectatorSpawnZ");
 
+		//Enable World
+		Bukkit.getServer().createWorld(new WorldCreator(worldName));
+
+		//Make sure world does not auto save
+		Bukkit.getWorld(worldName).setAutoSave(false);
+
 		//Create Locations for each Spawn Point
 		//We will use the default world
-		Location blueTeamSpawn = new Location(Bukkit.getWorlds().get(0), blueSpawnX, blueSpawnY, blueSpawnZ);
-		Location redTeamSpawn = new Location(Bukkit.getWorlds().get(0), redSpawnX, redSpawnY, redSpawnZ);
-		Location spectatorSpawn = new Location(Bukkit.getWorlds().get(0), spectatorSpawnX, spectatorSpawnY, spectatorSpawnZ);
+		Location blueTeamSpawn = new Location(Bukkit.getWorld(worldName), blueSpawnX, blueSpawnY, blueSpawnZ);
+		Location redTeamSpawn = new Location(Bukkit.getWorld(worldName), redSpawnX, redSpawnY, redSpawnZ);
+		Location spectatorSpawn = new Location(Bukkit.getWorld(worldName), spectatorSpawnX, spectatorSpawnY, spectatorSpawnZ);
 
 		//Now create a map object
-		Map map = new Map(blueTeamSpawn, redTeamSpawn, blueEdge1X, blueEdge1Z, blueEdge2X, blueEdge2Z, redEdge1X, redEdge1Z
+		Map map = new Map(worldName, blueTeamSpawn, redTeamSpawn, blueEdge1X, blueEdge1Z, blueEdge2X, blueEdge2Z, redEdge1X, redEdge1Z
 				, redEdge2X, redEdge2Z, spectatorSpawn);
 
 		//Finally, lets return the map

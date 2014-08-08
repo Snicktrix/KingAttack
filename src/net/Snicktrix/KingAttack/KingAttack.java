@@ -17,10 +17,6 @@ public class KingAttack extends JavaPlugin {
         this.events = new Events(this);
         Bukkit.getPluginManager().registerEvents(events, this);
 
-		//Make sure world does not auto save
-		//Todo change to config named world
-		Bukkit.getWorld("World").setAutoSave(false);
-
 		//Config preparation
 		this.saveDefaultConfig();
 

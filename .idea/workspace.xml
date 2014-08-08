@@ -7,9 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd537ec4-d84b-4896-b1c7-081460722086" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config.yml" afterPath="$PROJECT_DIR$/src/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="KingAttack.iws" />
@@ -33,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="KingAttack.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="KingAttack.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49019608" vertical-offset="0" max-vertical-offset="645">
-              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -46,15 +48,49 @@
       <file leaf-file-name="GameManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2325" max-vertical-offset="4170">
-              <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3360" max-vertical-offset="4245">
+              <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
               <folding>
                 <element signature="e#441#453#0" expanded="true" />
                 <element signature="e#514#526#0" expanded="true" />
                 <element signature="e#594#606#0" expanded="true" />
                 <element signature="e#5438#5620#0" expanded="true" />
                 <element signature="e#5615#5616#0" expanded="true" />
+                <element signature="e#8981#8982#0" expanded="true" />
+                <element signature="e#9013#9014#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigData.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42404008" vertical-offset="436" max-vertical-offset="1260">
+              <caret line="46" column="78" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="78" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+              <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Map.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="1140">
+              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,13 +141,13 @@
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/MapManager.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GamePlayer.java" />
         <option value="$PROJECT_DIR$/plugin.yml" />
-        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" />
         <option value="$PROJECT_DIR$/Config.yml" />
-        <option value="$PROJECT_DIR$/src/config.yml" />
-        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java" />
+        <option value="$PROJECT_DIR$/src/config.yml" />
+        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java" />
+        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" />
       </list>
     </option>
   </component>
@@ -402,7 +438,11 @@
       <created>1407516790899</created>
       <updated>1407516790899</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Games can now reset! woohoo!&#10;World reset added">
+      <created>1407519933301</created>
+      <updated>1407519933301</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -451,7 +491,8 @@
     </option>
     <MESSAGE value="Added loading maps from config" />
     <MESSAGE value="Correctly setup config loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correctly setup config loading" />
+    <MESSAGE value="Games can now reset! woohoo!&#10;World reset added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Games can now reset! woohoo!&#10;World reset added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -502,6 +543,8 @@
             <element signature="e#594#606#0" expanded="true" />
             <element signature="e#5438#5620#0" expanded="true" />
             <element signature="e#5615#5616#0" expanded="true" />
+            <element signature="e#8981#8982#0" expanded="true" />
+            <element signature="e#9013#9014#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -563,6 +606,8 @@
             <element signature="e#594#606#0" expanded="true" />
             <element signature="e#5438#5620#0" expanded="true" />
             <element signature="e#5615#5616#0" expanded="true" />
+            <element signature="e#8981#8982#0" expanded="true" />
+            <element signature="e#9013#9014#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -601,6 +646,8 @@
             <element signature="e#594#606#0" expanded="true" />
             <element signature="e#5438#5620#0" expanded="true" />
             <element signature="e#5615#5616#0" expanded="true" />
+            <element signature="e#8981#8982#0" expanded="true" />
+            <element signature="e#9013#9014#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -639,6 +686,8 @@
             <element signature="e#594#606#0" expanded="true" />
             <element signature="e#5438#5620#0" expanded="true" />
             <element signature="e#5615#5616#0" expanded="true" />
+            <element signature="e#8981#8982#0" expanded="true" />
+            <element signature="e#9013#9014#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -651,37 +700,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="885">
-          <caret line="25" column="236" selection-start-line="25" selection-start-column="236" selection-end-line="25" selection-end-column="236" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
           <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1125">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,25 +729,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="1140">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2325" max-vertical-offset="4170">
-          <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3360" max-vertical-offset="4245">
+          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
           <folding>
             <element signature="e#441#453#0" expanded="true" />
             <element signature="e#514#526#0" expanded="true" />
             <element signature="e#594#606#0" expanded="true" />
             <element signature="e#5438#5620#0" expanded="true" />
             <element signature="e#5615#5616#0" expanded="true" />
+            <element signature="e#8981#8982#0" expanded="true" />
+            <element signature="e#9013#9014#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49019608" vertical-offset="0" max-vertical-offset="645">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42404008" vertical-offset="436" max-vertical-offset="1260">
+          <caret line="46" column="78" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

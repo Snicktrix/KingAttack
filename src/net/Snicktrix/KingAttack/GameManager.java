@@ -190,13 +190,14 @@ public class GameManager {
 		this.gamePlayerList = new ArrayList<GamePlayer>();
 		this.gameStarted = false;
 
-		//Todo add World Name to config
 		//Unload world
-
-		Bukkit.unloadWorld("World", false);
+		Bukkit.unloadWorld(map.getWorldName(), false);
 
 		//Load world
-		Bukkit.getServer().createWorld(new WorldCreator("World"));
+		Bukkit.getServer().createWorld(new WorldCreator(map.getWorldName()));
+
+		//Make sure world does not auto save
+		Bukkit.getWorld(map.getWorldName()).setAutoSave(false);
 	}
 
 
@@ -271,6 +272,10 @@ public class GameManager {
     }
 
     //*************************************************//
+
+	public String getWorldName() {
+		return map.getWorldName();
+	}
 
     //Just a little shortcut
     void debug(String msg) {

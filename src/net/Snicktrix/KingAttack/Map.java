@@ -6,6 +6,8 @@ import org.bukkit.Location;
  * Created by Luke on 8/7/14.
  */
 public class Map {
+	private String worldName;
+
 	private Location blueTeamSpawn;
 	private Location redTeamSpawn;
 
@@ -23,7 +25,8 @@ public class Map {
 
 	private Location spectatorSpawn;
 
-	public Map(Location blueTeamSpawn, Location redTeamSpawn, double blueEdge1X, double blueEdge1Z, double blueEdge2X, double blueEdge2Z, double redEdge1X, double redEdge1Z, double redEdge2X, double redEdge2Z, Location spectatorSpawn) {
+	public Map(String worldName, Location blueTeamSpawn, Location redTeamSpawn, double blueEdge1X, double blueEdge1Z, double blueEdge2X, double blueEdge2Z, double redEdge1X, double redEdge1Z, double redEdge2X, double redEdge2Z, Location spectatorSpawn) {
+		this.worldName = worldName;
 		this.blueTeamSpawn = blueTeamSpawn;
 		this.redTeamSpawn = redTeamSpawn;
 		this.blueEdge1X = blueEdge1X;
@@ -45,21 +48,49 @@ public class Map {
 		this.spectatorSpawn = spectatorSpawn;
 	}
 
-	public Location getBlueTeamSpawn() {
-		return blueTeamSpawn;
+	public String getWorldName() {
+		return worldName;
 	}
 
-	public void setBlueTeamSpawn(Location blueTeamSpawn) {
-		this.blueTeamSpawn = blueTeamSpawn;
+
+	public Location getBlueTeamSpawn() {
+		return blueTeamSpawn;
 	}
 
 	public Location getRedTeamSpawn() {
 		return redTeamSpawn;
 	}
 
-	public void setRedTeamSpawn(Location redTeamSpawn) {
-		this.redTeamSpawn = redTeamSpawn;
+	public double getBlueEdge1X() {
+		return blueEdge1X;
 	}
 
+	public double getBlueEdge1Z() {
+		return blueEdge1Z;
+	}
+
+	public double getBlueEdge2X() {
+		return blueEdge2X;
+	}
+
+	public double getBlueEdge2Z() {
+		return blueEdge2Z;
+	}
+
+	public double getRedEdge1X() {
+		return redEdge1X;
+	}
+
+	public double getRedEdge1Z() {
+		return redEdge1Z;
+	}
+
+	public double getRedEdge2X() {
+		return redEdge2X;
+	}
+
+	public double getRedEdge2Z() {
+		return redEdge2Z;
+	}
 }
 

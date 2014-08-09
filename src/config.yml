@@ -1,20 +1,19 @@
-WorldName: 'Battle'
+WorldName: Medieval
 
-BuildEdge1X: 5
-BuildEdge1Z: 5
+BuildEdge1X: 0
+BuildEdge1Z: 0
 
-BuildEdge2X: 7
-BuildEdge2Z: 10
+BuildEdge2X: -50
+BuildEdge2Z: 49
 
+BlueSpawnX: 21.5
+BlueSpawnY: 69
+BlueSpawnZ: 9.5
 
-BlueSpawnX: 6
-BlueSpawnY: 5
-BlueSpawnZ: 6
+RedSpawnX: -71.5
+RedSpawnY: 70
+RedSpawnZ: 40.5
 
-RedSpawnX: -6
-RedSpawnY: 5
-RedSpawnZ: -6
-
-SpectatorSpawnX: 10
-SpectatorSpawnY: 10
-SpectatorSpawnZ: 0
+SpectatorSpawnX: -25.5
+SpectatorSpawnY: 115
+SpectatorSpawnZ: 31.5

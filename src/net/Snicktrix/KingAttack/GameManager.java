@@ -327,6 +327,44 @@ public class GameManager {
 
     //*************************************************//
 
+	//******* BOUNDARIES  *******//
+
+	public boolean insideBuildZone(Location location) {
+		double x = location.getX();
+		double z = location.getZ();
+
+		double boundHighX = Math.max(map.getBuildEdge1X(), map.getBuildEdge2X());
+		double boundLowX = Math.min(map.getBuildEdge1X(), map.getBuildEdge2X());
+
+		double boundHighZ = Math.max(map.getBuildEdge1Z(), map.getBuildEdge2Z());
+		double boundLowZ = Math.min(map.getBuildEdge1Z(), map.getBuildEdge2Z());
+
+		//Check if location is inside the build region
+		if (x >= boundLowX && x <= boundHighX
+				&& z >= boundLowZ && z <= boundHighZ) {
+			return true;
+		} else {
+			//Not inside the region
+			return false;
+		}
+	}
+
+	public boolean canWalk(Player player, Location toLocation) {
+		GamePlayer gamePlayer = getGamePlayerFromPlayer(player);
+
+		if (gamePlayer.getType() == GamePlayer.Type.King) {
+			if (insideBuildZone(toLocation)) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+
+
+
+	//*************************************************//
+
 	public String getWorldName() {
 		return map.getWorldName();
 	}

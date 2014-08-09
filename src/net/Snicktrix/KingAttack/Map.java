@@ -19,6 +19,22 @@ public class Map {
 
 	private Location spectatorSpawn;
 
+	public double getBuildEdge1X() {
+		return buildEdge1X;
+	}
+
+	public double getBuildEdge1Z() {
+		return buildEdge1Z;
+	}
+
+	public double getBuildEdge2X() {
+		return buildEdge2X;
+	}
+
+	public double getBuildEdge2Z() {
+		return buildEdge2Z;
+	}
+
 	public Map(String worldName, Location blueTeamSpawn, Location redTeamSpawn, double buildEdge1X, double buildEdge1Z, double buildEdge2X, double buildEdge2Z, Location spectatorSpawn) {
 		this.worldName = worldName;
 		this.blueTeamSpawn = blueTeamSpawn;
@@ -27,6 +43,7 @@ public class Map {
 		this.buildEdge1Z = buildEdge1Z;
 		this.buildEdge2X = buildEdge2X;
 		this.buildEdge2Z = buildEdge2Z;
+
 		this.spectatorSpawn = spectatorSpawn;
 	}
 

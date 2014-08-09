@@ -1,13 +1,16 @@
 package net.Snicktrix.KingAttack;
 
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 
@@ -74,7 +77,27 @@ public class Events implements Listener {
 
 	@EventHandler
 	public void onBlockBreak(BlockBreakEvent event) {
+		if (!this.kingAttack.gameManager.insideBuildZone(event.getBlock().getLocation())) {
+			event.setCancelled(true);
+			event.getPlayer().sendMessage(ChatColor.RED + "You can only break blocks in the middle zone");
+		}
+	}
 
+	@EventHandler
+	public void onBlockPlace(BlockPlaceEvent event) {
+		if (!this.kingAttack.gameManager.insideBuildZone(event.getBlock().getLocation())) {
+			event.setCancelled(true);
+			event.getPlayer().sendMessage(ChatColor.RED + "You can only place blocks in the middle zone");
+		}
+	}
+
+	@EventHandler
+	public void onPlayerMove(PlayerMoveEvent event) {
+		//Send the location that they will be moving to
+		if (!this.kingAttack.gameManager.canWalk(event.getPlayer(), event.getTo())) {
+			event.setCancelled(true);
+			event.getPlayer().sendMessage(ChatColor.RED + "Kings must stay in their base zone");
+		}
 	}
 
 }

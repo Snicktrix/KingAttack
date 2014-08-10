@@ -105,6 +105,10 @@ public class GameManager {
 
 	}
 
+	public GamePlayer.Team getTeam(Player player) {
+		return getGamePlayerFromPlayer(player).getTeam();
+	}
+
     public boolean onSameTeam(Player player1, Player player2) {
         GamePlayer gamePlayer1 = getGamePlayerFromPlayer(player1);
         GamePlayer gamePlayer2 = getGamePlayerFromPlayer(player2);

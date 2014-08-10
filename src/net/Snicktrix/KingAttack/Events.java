@@ -9,6 +9,7 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
@@ -49,6 +50,17 @@ public class Events implements Listener {
 	@EventHandler
 	public void onRespawn(PlayerRespawnEvent event) {
 		event.setRespawnLocation(kingAttack.gameManager.getRespawnLocation(event.getPlayer()));
+	}
+
+	@EventHandler
+	public void onChat(AsyncPlayerChatEvent event) {
+		GamePlayer.Team team = kingAttack.gameManager.getTeam(event.getPlayer());
+
+		if (team == GamePlayer.Team.Blue) {
+			event.setFormat(ChatColor.BLUE + "%s" + ChatColor.GRAY + ": %s");
+		} else if (team == GamePlayer.Team.Red) {
+			event.setFormat(ChatColor.RED + "%s" + ChatColor.GRAY + ": %s");
+		}
 	}
 
 	//Friendly Fire

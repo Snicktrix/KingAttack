@@ -41,6 +41,8 @@ public class Events implements Listener {
 	public void onDeath(PlayerDeathEvent event) {
 		if (event.getEntity().getKiller() != null) {
 			kingAttack.gameManager.playerDeath(event.getEntity(), event.getEntity().getKiller());
+		} else {
+			kingAttack.gameManager.playerDeath(event.getEntity());
 		}
 	}
 

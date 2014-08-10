@@ -46,8 +46,10 @@ public class GameManager {
 		//Add them to the team lists
 		if (gamePlayer.getTeam() == GamePlayer.Team.Blue) {
 			blueTeam.add(gamePlayer);
+			player.setPlayerListName(ChatColor.BLUE + player.getName());
 		} else if (gamePlayer.getTeam() == GamePlayer.Team.Red) {
 			redTeam.add(gamePlayer);
+			player.setPlayerListName(ChatColor.RED + player.getName());
 		}
 
 		//Now check if we should start the game or not
@@ -140,6 +142,15 @@ public class GameManager {
 		GamePlayer gamePlayer = getGamePlayerFromPlayer(player);
 
 		if (gamePlayer.getType() == GamePlayer.Type.Spectator) {
+			return true;
+		}
+		return false;
+	}
+
+	public boolean isKing(Player player) {
+		GamePlayer gamePlayer = getGamePlayerFromPlayer(player);
+
+		if (gamePlayer.getType() == GamePlayer.Type.King) {
 			return true;
 		}
 		return false;
@@ -303,6 +314,8 @@ public class GameManager {
 
 			//Make this players team lose
 			endGameWithLosingTeam(deadGamePlayer.getTeam());
+		} else {
+			respawnGear(deadPlayer);
 		}
 	}
 
@@ -343,6 +356,8 @@ public class GameManager {
     private void setupBlueKing(GamePlayer gamePlayer) {
         gamePlayer.setType(GamePlayer.Type.King);
 
+		gamePlayer.getPlayer().setDisplayName(ChatColor.GOLD + "KING " + ChatColor.BLUE + gamePlayer.getPlayer().getName());
+
 		clearPotions(gamePlayer.getPlayer());
 		gamePlayer.getPlayer().setHealth(gamePlayer.getPlayer().getMaxHealth());
 		gamePlayer.getPlayer().setFoodLevel(20);
@@ -379,6 +394,8 @@ public class GameManager {
     //Red King
     private void setupRedKing(GamePlayer gamePlayer) {
         gamePlayer.setType(GamePlayer.Type.King);
+
+		gamePlayer.getPlayer().setDisplayName(ChatColor.GOLD + "KING " + ChatColor.RED + gamePlayer.getPlayer().getName());
 
 		clearPotions(gamePlayer.getPlayer());
 		gamePlayer.getPlayer().setHealth(gamePlayer.getPlayer().getMaxHealth());

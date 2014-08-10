@@ -57,21 +57,37 @@ public class Events implements Listener {
 	public void onChat(AsyncPlayerChatEvent event) {
 		GamePlayer.Team team = kingAttack.gameManager.getTeam(event.getPlayer());
 
-		if (team == GamePlayer.Team.Blue) {
-			event.setFormat(ChatColor.BLUE + "%s" + ChatColor.GRAY + ": %s");
-		} else if (team == GamePlayer.Team.Red) {
-			event.setFormat(ChatColor.RED + "%s" + ChatColor.GRAY + ": %s");
+		if (kingAttack.gameManager.isKing(event.getPlayer())) {
+			if (team == GamePlayer.Team.Blue) {
+				event.setFormat(ChatColor.BLUE + "%s" + ChatColor.GRAY + ": %s");
+			} else if (team == GamePlayer.Team.Red) {
+				event.setFormat(ChatColor.RED + "%s" + ChatColor.GRAY + ": %s");
+			}
+		} else {
+			if (team == GamePlayer.Team.Blue) {
+				event.setFormat(ChatColor.BLUE + "%s" + ChatColor.GRAY + ": %s");
+			} else if (team == GamePlayer.Team.Red) {
+				event.setFormat(ChatColor.RED + "%s" + ChatColor.GRAY + ": %s");
+			}
 		}
 	}
 
 	@EventHandler
 	public void onNameTag(AsyncPlayerReceiveNameTagEvent event) {
-		GamePlayer.Team team = kingAttack.gameManager.getTeam(event.getPlayer());
+		GamePlayer.Team team = kingAttack.gameManager.getTeam(event.getNamedPlayer());
 
-		if (team == GamePlayer.Team.Blue) {
-			event.setTag(ChatColor.BLUE + event.getNamedPlayer().getName());
-		} else if (team == GamePlayer.Team.Red) {
-			event.setTag(ChatColor.RED + event.getNamedPlayer().getName());
+		if (kingAttack.gameManager.isKing(event.getNamedPlayer())) {
+			if (team == GamePlayer.Team.Blue) {
+				event.setTag(ChatColor.GOLD + "KING " + ChatColor.BLUE + event.getNamedPlayer().getName());
+			} else if (team == GamePlayer.Team.Red) {
+				event.setTag(ChatColor.GOLD + "KING " + ChatColor.RED + event.getNamedPlayer().getName());
+			}
+		} else {
+			if (team == GamePlayer.Team.Blue) {
+				event.setTag(ChatColor.BLUE + event.getNamedPlayer().getName());
+			} else if (team == GamePlayer.Team.Red) {
+				event.setTag(ChatColor.RED + event.getNamedPlayer().getName());
+			}
 		}
 	}
 

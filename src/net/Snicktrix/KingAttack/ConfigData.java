@@ -29,6 +29,8 @@ public class ConfigData {
 			}
 		}
 
+		int minPlayers = this.kingAttack.getConfig().getInt("MinPlayers");
+
 		//These are the X and Z values for the boundaries
 		//We will use these to calculate team areas
 		String worldName = this.kingAttack.getConfig().getString("WorldName");
@@ -65,7 +67,7 @@ public class ConfigData {
 		Location spectatorSpawn = new Location(Bukkit.getWorld(worldName), spectatorSpawnX, spectatorSpawnY, spectatorSpawnZ);
 
 		//Now create a map object
-		Map map = new Map(worldName, blueTeamSpawn, redTeamSpawn, buildEdge1X, buildEdge1Z, buildEdge2X, buildEdge2Z, spectatorSpawn);
+		Map map = new Map(worldName, minPlayers, blueTeamSpawn, redTeamSpawn, buildEdge1X, buildEdge1Z, buildEdge2X, buildEdge2Z, spectatorSpawn);
 
 		//Finally, lets return the map
 		return map;

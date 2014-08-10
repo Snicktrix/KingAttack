@@ -7,7 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd537ec4-d84b-4896-b1c7-081460722086" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config.yml" afterPath="$PROJECT_DIR$/src/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="KingAttack.iws" />
@@ -44,9 +47,10 @@
       <file leaf-file-name="GameManager.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.001669449" vertical-offset="5776" max-vertical-offset="6585">
-              <caret line="435" column="24" selection-start-line="435" selection-start-column="24" selection-end-line="435" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.3505843" vertical-offset="5460" max-vertical-offset="6615">
+              <caret line="429" column="56" selection-start-line="429" selection-start-column="56" selection-end-line="429" selection-end-column="56" />
               <folding>
+                <element signature="e#6448#6484#0" expanded="false" />
                 <element signature="method#insideBuildZone#0;class#GameManager#0" expanded="false" />
                 <element signature="method#canWalk#0;class#GameManager#0" expanded="false" />
                 <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
@@ -59,8 +63,8 @@
       <file leaf-file-name="Events.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="258" max-vertical-offset="1320">
-              <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="1350">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,8 +73,8 @@
       <file leaf-file-name="ConfigData.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1215">
-              <caret line="67" column="116" selection-start-line="67" selection-start-column="116" selection-end-line="67" selection-end-column="116" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1245">
+              <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -79,8 +83,8 @@
       <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="360">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -89,8 +93,8 @@
       <file leaf-file-name="Map.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1170">
-              <caret line="25" column="0" selection-start-line="21" selection-start-column="34" selection-end-line="25" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="331" max-vertical-offset="975">
+              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -127,12 +131,12 @@
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/MapManager.java" />
         <option value="$PROJECT_DIR$/plugin.yml" />
         <option value="$PROJECT_DIR$/Config.yml" />
-        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" />
-        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" />
-        <option value="$PROJECT_DIR$/src/config.yml" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GamePlayer.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java" />
+        <option value="$PROJECT_DIR$/src/config.yml" />
+        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" />
+        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" />
       </list>
     </option>
@@ -176,6 +180,30 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="KingAttack" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KingAttack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KingAttack" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KingAttack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KingAttack" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -408,7 +436,15 @@
       <created>1407628943665</created>
       <updated>1407628943665</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Respawn with gear&#10;Clear potion effects on join/respawn&#10;Max out health/food on join/respawn">
+      <created>1407691451097</created>
+      <updated>1407691451097</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixed bug where king not being killed from a player wouldn't end game">
+      <created>1407691603669</created>
+      <updated>1407691603669</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -425,6 +461,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -435,7 +472,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -464,7 +500,9 @@
     <MESSAGE value="Trapped Kings in their bases and only allowed players to build in the middle zone" />
     <MESSAGE value="Changed default config to match test map" />
     <MESSAGE value="re-coded out of bounds system by using a runnable and fixed world regen issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="re-coded out of bounds system by using a runnable and fixed world regen issues" />
+    <MESSAGE value="Respawn with gear&#10;Clear potion effects on join/respawn&#10;Max out health/food on join/respawn" />
+    <MESSAGE value="Fixed bug where king not being killed from a player wouldn't end game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug where king not being killed from a player wouldn't end game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -497,6 +535,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="5325" max-vertical-offset="7230">
           <caret line="355" column="43" selection-start-line="355" selection-start-column="43" selection-end-line="355" selection-end-column="43" />
           <folding>
+            <element signature="e#6448#6484#0" expanded="false" />
             <element signature="method#insideBuildZone#0;class#GameManager#0" expanded="false" />
             <element signature="method#canWalk#0;class#GameManager#0" expanded="false" />
             <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
@@ -558,6 +597,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="5325" max-vertical-offset="7230">
           <caret line="355" column="43" selection-start-line="355" selection-start-column="43" selection-end-line="355" selection-end-column="43" />
           <folding>
+            <element signature="e#6448#6484#0" expanded="false" />
             <element signature="method#insideBuildZone#0;class#GameManager#0" expanded="false" />
             <element signature="method#canWalk#0;class#GameManager#0" expanded="false" />
             <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
@@ -619,6 +659,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3258" max-vertical-offset="4950">
           <caret line="352" column="36" selection-start-line="352" selection-start-column="36" selection-end-line="352" selection-end-column="36" />
           <folding>
+            <element signature="e#6448#6484#0" expanded="false" />
             <element signature="method#insideBuildZone#0;class#GameManager#0" expanded="false" />
             <element signature="method#canWalk#0;class#GameManager#0" expanded="false" />
             <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
@@ -696,6 +737,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2595">
           <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
+            <element signature="e#6448#6484#0" expanded="false" />
             <element signature="method#insideBuildZone#0;class#GameManager#0" expanded="false" />
             <element signature="method#canWalk#0;class#GameManager#0" expanded="false" />
             <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
@@ -749,6 +791,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2595">
           <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
+            <element signature="e#6448#6484#0" expanded="false" />
             <element signature="method#insideBuildZone#0;class#GameManager#0" expanded="false" />
             <element signature="method#canWalk#0;class#GameManager#0" expanded="false" />
             <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
@@ -786,6 +829,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="2445">
           <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
           <folding>
+            <element signature="e#6448#6484#0" expanded="false" />
             <element signature="method#insideBuildZone#0;class#GameManager#0" expanded="false" />
             <element signature="method#canWalk#0;class#GameManager#0" expanded="false" />
             <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
@@ -823,6 +867,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="795">
           <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
           <folding>
+            <element signature="e#6448#6484#0" expanded="false" />
             <element signature="method#insideBuildZone#0;class#GameManager#0" expanded="false" />
             <element signature="method#canWalk#0;class#GameManager#0" expanded="false" />
             <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
@@ -843,14 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
           <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="900">
-          <caret line="25" column="0" selection-start-line="21" selection-start-column="34" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,14 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GamePlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="900">
@@ -899,27 +928,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="331" max-vertical-offset="975">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1215">
-          <caret line="67" column="116" selection-start-line="67" selection-start-column="116" selection-end-line="67" selection-end-column="116" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1245">
+          <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="363" max-vertical-offset="975">
-          <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="1350">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.001669449" vertical-offset="5776" max-vertical-offset="6585">
-          <caret line="435" column="24" selection-start-line="435" selection-start-column="24" selection-end-line="435" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.3505843" vertical-offset="5460" max-vertical-offset="6615">
+          <caret line="429" column="56" selection-start-line="429" selection-start-column="56" selection-end-line="429" selection-end-column="56" />
           <folding>
+            <element signature="e#6448#6484#0" expanded="false" />
             <element signature="method#insideBuildZone#0;class#GameManager#0" expanded="false" />
             <element signature="method#canWalk#0;class#GameManager#0" expanded="false" />
             <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />

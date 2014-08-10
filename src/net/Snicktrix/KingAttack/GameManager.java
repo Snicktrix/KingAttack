@@ -32,7 +32,7 @@ public class GameManager {
     public GameManager(KingAttack kingAttack, Map map, int minimumGameSize, int maxGameSize) {
 		this.kingAttack = kingAttack;
         this.map = map;
-		this.minimumGameSize = minimumGameSize;
+		this.minimumGameSize = map.getMinPlayers();
 		this.maxGameSize = maxGameSize;
 
 		this.checkMovement();
@@ -217,7 +217,7 @@ public class GameManager {
 				}
 				resetGame();
 			}
-		}, 3 * 20);
+		}, 10 * 20);
 
 		//Add a second delay to give enough time for lobbykick command to take finish
 		Bukkit.getScheduler().scheduleSyncDelayedTask(kingAttack, new Runnable() {
@@ -225,7 +225,7 @@ public class GameManager {
 			public void run() {
 				resetGame();
 			}
-		}, 6 * 20);
+		}, 13 * 20);
 
 	}
 
@@ -439,9 +439,12 @@ public class GameManager {
 						}
 						//PrevLoc is not null
 						if (insideBuildZone(gamePlayer.getPlayer().getLocation())) {
+							//Player is out of bounds
 							//Move them to previous location
 							gamePlayer.getPlayer().teleport(gamePlayer.getPrevLoc());
+							gamePlayer.getPlayer().sendMessage(ChatColor.RED + "Kings must stay near their castle");
 						} else {
+							//Player is good
 							//Update their new location
 							gamePlayer.setPrevLoc(gamePlayer.getPlayer().getLocation());
 						}

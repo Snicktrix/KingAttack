@@ -7,6 +7,7 @@ import org.bukkit.Location;
  */
 public class Map {
 	private String worldName;
+	private int minPlayers;
 
 	private Location blueTeamSpawn;
 	private Location redTeamSpawn;
@@ -14,10 +15,28 @@ public class Map {
 	private double buildEdge1X;
 	private double buildEdge1Z;
 
+
 	private double buildEdge2X;
 	private double buildEdge2Z;
 
 	private Location spectatorSpawn;
+
+	public Map(String worldName, int minPlayers, Location blueTeamSpawn, Location redTeamSpawn, double buildEdge1X, double buildEdge1Z, double buildEdge2X, double buildEdge2Z, Location spectatorSpawn) {
+		this.worldName = worldName;
+		this.minPlayers = minPlayers;
+		this.blueTeamSpawn = blueTeamSpawn;
+		this.redTeamSpawn = redTeamSpawn;
+		this.buildEdge1X = buildEdge1X;
+		this.buildEdge1Z = buildEdge1Z;
+		this.buildEdge2X = buildEdge2X;
+		this.buildEdge2Z = buildEdge2Z;
+
+		this.spectatorSpawn = spectatorSpawn;
+	}
+
+	public int getMinPlayers() {
+		return minPlayers;
+	}
 
 	public double getBuildEdge1X() {
 		return buildEdge1X;
@@ -33,18 +52,6 @@ public class Map {
 
 	public double getBuildEdge2Z() {
 		return buildEdge2Z;
-	}
-
-	public Map(String worldName, Location blueTeamSpawn, Location redTeamSpawn, double buildEdge1X, double buildEdge1Z, double buildEdge2X, double buildEdge2Z, Location spectatorSpawn) {
-		this.worldName = worldName;
-		this.blueTeamSpawn = blueTeamSpawn;
-		this.redTeamSpawn = redTeamSpawn;
-		this.buildEdge1X = buildEdge1X;
-		this.buildEdge1Z = buildEdge1Z;
-		this.buildEdge2X = buildEdge2X;
-		this.buildEdge2Z = buildEdge2Z;
-
-		this.spectatorSpawn = spectatorSpawn;
 	}
 
 	public Location getSpectatorSpawn() {

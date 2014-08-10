@@ -6,6 +6,7 @@ import org.bukkit.entity.Firework;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.FireworkMeta;
+import org.bukkit.potion.PotionEffect;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -281,7 +282,16 @@ public class GameManager {
 		}
 	}
 
+	public void respawnGear(Player player) {
+		GamePlayer gamePlayer = getGamePlayerFromPlayer(player);
+		GamePlayer.Type type = gamePlayer.getType();
 
+		if (type == GamePlayer.Type.Knight && gamePlayer.getTeam() == GamePlayer.Team.Blue) {
+			setupBlueKnight(gamePlayer);
+		} else if (type == GamePlayer.Type.Knight && gamePlayer.getTeam() == GamePlayer.Team.Red) {
+			setupRedKnight(gamePlayer);
+		}
+	}
 
 
     //*************************************************//
@@ -291,6 +301,10 @@ public class GameManager {
     //Blue Knight
     private void setupBlueKnight(GamePlayer gamePlayer) {
         gamePlayer.setType(GamePlayer.Type.Knight);
+
+		clearPotions(gamePlayer.getPlayer());
+		gamePlayer.getPlayer().setHealth(gamePlayer.getPlayer().getMaxHealth());
+		gamePlayer.getPlayer().setFoodLevel(20);
 
 		gamePlayer.getPlayer().getInventory().clear();
 		gamePlayer.getPlayer().getInventory().setArmorContents(null);
@@ -304,6 +318,10 @@ public class GameManager {
     //Blue King
     private void setupBlueKing(GamePlayer gamePlayer) {
         gamePlayer.setType(GamePlayer.Type.King);
+
+		clearPotions(gamePlayer.getPlayer());
+		gamePlayer.getPlayer().setHealth(gamePlayer.getPlayer().getMaxHealth());
+		gamePlayer.getPlayer().setFoodLevel(20);
 
 		gamePlayer.getPlayer().getInventory().clear();
 		gamePlayer.getPlayer().getInventory().setArmorContents(null);
@@ -320,6 +338,10 @@ public class GameManager {
     private void setupRedKnight(GamePlayer gamePlayer) {
         gamePlayer.setType(GamePlayer.Type.Knight);
 
+		clearPotions(gamePlayer.getPlayer());
+		gamePlayer.getPlayer().setHealth(gamePlayer.getPlayer().getMaxHealth());
+		gamePlayer.getPlayer().setFoodLevel(20);
+
 		gamePlayer.getPlayer().getInventory().clear();
 		gamePlayer.getPlayer().getInventory().setArmorContents(null);
 
@@ -334,6 +356,10 @@ public class GameManager {
     private void setupRedKing(GamePlayer gamePlayer) {
         gamePlayer.setType(GamePlayer.Type.King);
 
+		clearPotions(gamePlayer.getPlayer());
+		gamePlayer.getPlayer().setHealth(gamePlayer.getPlayer().getMaxHealth());
+		gamePlayer.getPlayer().setFoodLevel(20);
+
 		gamePlayer.getPlayer().getInventory().clear();
 		gamePlayer.getPlayer().getInventory().setArmorContents(null);
 
@@ -342,6 +368,12 @@ public class GameManager {
         gamePlayer.getPlayer().teleport(map.getRedTeamSpawn());
         gamePlayer.getPlayer().sendMessage("You are a red King");
     }
+
+	public void clearPotions(Player player) {
+		for (PotionEffect effect : player.getActivePotionEffects()) {
+			player.removePotionEffect(effect.getType());
+		}
+	}
 
     //******* SPECTATOR *******//
 

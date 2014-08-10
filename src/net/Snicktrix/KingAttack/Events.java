@@ -10,7 +10,6 @@ import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 
@@ -26,8 +25,12 @@ public class Events implements Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
-        kingAttack.gameManager.JoinGame(event.getPlayer());
-    }
+		if (this.kingAttack.gameManager.isDenyJoin()) {
+			event.getPlayer().kickPlayer("Restarting Game");
+			return;
+		}
+		kingAttack.gameManager.JoinGame(event.getPlayer());
+	}
 
 	@EventHandler
 	public void onLeave(PlayerQuitEvent event) {
@@ -88,15 +91,6 @@ public class Events implements Listener {
 		if (!this.kingAttack.gameManager.insideBuildZone(event.getBlock().getLocation())) {
 			event.setCancelled(true);
 			event.getPlayer().sendMessage(ChatColor.RED + "You can only place blocks in the middle zone");
-		}
-	}
-
-	@EventHandler
-	public void onPlayerMove(PlayerMoveEvent event) {
-		//Send the location that they will be moving to
-		if (!this.kingAttack.gameManager.canWalk(event.getPlayer(), event.getTo())) {
-			event.setCancelled(true);
-			event.getPlayer().sendMessage(ChatColor.RED + "Kings must stay in their base zone");
 		}
 	}
 

@@ -16,6 +16,8 @@ import java.util.Random;
 public class GameManager {
 	private KingAttack kingAttack;
 
+	private boolean denyJoin = false;
+
     private boolean gameStarted;
     private ArrayList<GamePlayer> blueTeam = new ArrayList<GamePlayer>();
     private ArrayList<GamePlayer> redTeam = new ArrayList<GamePlayer>();
@@ -31,6 +33,8 @@ public class GameManager {
         this.map = map;
 		this.minimumGameSize = minimumGameSize;
 		this.maxGameSize = maxGameSize;
+
+		this.checkMovement();
     }
 
     public void JoinGame(Player player) {
@@ -148,6 +152,10 @@ public class GameManager {
     }
 
 	public void leaveGame(Player player) {
+		//The player was kicked from the game
+		//Because the game is ending
+		if(this.denyJoin) return;
+
 		//Get the gamePlayer
 		GamePlayer gamePlayer = getGamePlayerFromPlayer(player);
 		//Remove from our tracking list
@@ -197,20 +205,39 @@ public class GameManager {
 		Bukkit.getScheduler().scheduleSyncDelayedTask(kingAttack, new Runnable() {
 			@Override
 			public void run() {
-				for (Player player : Bukkit.getOnlinePlayers()) {
-					player.kickPlayer("Restarting Game");
-					resetGame();
+
+				//Kick all players into lobby server
+				//BungeeLobbyKick plugin
+				if (!Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "lobbykick")) {
+					//In case the above method doesn't work
+					for (Player player : Bukkit.getOnlinePlayers()) {
+						player.kickPlayer("Restarting Game");
+					}
 				}
+				resetGame();
 			}
 		}, 3 * 20);
 
+		//Add a second delay to give enough time for lobbykick command to take finish
+		Bukkit.getScheduler().scheduleSyncDelayedTask(kingAttack, new Runnable() {
+			@Override
+			public void run() {
+				resetGame();
+			}
+		}, 6 * 20);
+
+	}
+
+	public boolean isDenyJoin() {
+		return denyJoin;
 	}
 
 	private void resetGame() {
+		this.denyJoin = true;
 		//Clear all our lists
-		this.blueTeam = new ArrayList<GamePlayer>();
-		this.redTeam = new ArrayList<GamePlayer>();
-		this.gamePlayerList = new ArrayList<GamePlayer>();
+		this.blueTeam.clear();
+		this.redTeam.clear();
+		this.gamePlayerList.clear();
 		this.gameStarted = false;
 
 		//Unload world
@@ -221,6 +248,8 @@ public class GameManager {
 
 		//Make sure world does not auto save
 		Bukkit.getWorld(map.getWorldName()).setAutoSave(false);
+
+		this.denyJoin = false;
 	}
 
 	//*************************************************//
@@ -266,8 +295,8 @@ public class GameManager {
 		gamePlayer.getPlayer().getInventory().clear();
 		gamePlayer.getPlayer().getInventory().setArmorContents(null);
 
-        gamePlayer.getPlayer().getInventory().setChestplate(new ItemStack(Material.LEATHER_CHESTPLATE));
-		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.LAPIS_ORE));
+		setArmour(gamePlayer.getPlayer(), Material.LEATHER_HELMET, Material.LEATHER_CHESTPLATE, Material.LEATHER_LEGGINGS, Material.LEATHER_BOOTS);
+		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.STONE_SWORD));
         gamePlayer.getPlayer().teleport(map.getBlueTeamSpawn());
         gamePlayer.getPlayer().sendMessage("You are a blue Knight");
     }
@@ -279,8 +308,8 @@ public class GameManager {
 		gamePlayer.getPlayer().getInventory().clear();
 		gamePlayer.getPlayer().getInventory().setArmorContents(null);
 
-        gamePlayer.getPlayer().getInventory().setChestplate(new ItemStack(Material.DIAMOND_CHESTPLATE));
-		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.LAPIS_BLOCK));
+		setArmour(gamePlayer.getPlayer(), Material.IRON_HELMET, Material.IRON_CHESTPLATE, Material.IRON_LEGGINGS, Material.IRON_BOOTS);
+		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.STONE_SWORD));
         gamePlayer.getPlayer().teleport(map.getBlueTeamSpawn());
         gamePlayer.getPlayer().sendMessage("You are a blue King");
     }
@@ -294,8 +323,8 @@ public class GameManager {
 		gamePlayer.getPlayer().getInventory().clear();
 		gamePlayer.getPlayer().getInventory().setArmorContents(null);
 
-        gamePlayer.getPlayer().getInventory().setChestplate(new ItemStack(Material.IRON_CHESTPLATE));
-		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.REDSTONE));
+		setArmour(gamePlayer.getPlayer(), Material.LEATHER_HELMET, Material.LEATHER_CHESTPLATE, Material.LEATHER_LEGGINGS, Material.LEATHER_BOOTS);
+		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.STONE_SWORD));
 		gamePlayer.getPlayer().teleport(map.getRedTeamSpawn());
         gamePlayer.getPlayer().sendMessage("You are a red Knight");
 		gamePlayer.getPlayer();
@@ -308,8 +337,8 @@ public class GameManager {
 		gamePlayer.getPlayer().getInventory().clear();
 		gamePlayer.getPlayer().getInventory().setArmorContents(null);
 
-        gamePlayer.getPlayer().getInventory().setChestplate(new ItemStack(Material.DIAMOND_CHESTPLATE));
-		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.REDSTONE_BLOCK));
+        setArmour(gamePlayer.getPlayer(), Material.IRON_HELMET, Material.IRON_CHESTPLATE, Material.IRON_LEGGINGS, Material.IRON_BOOTS);
+		gamePlayer.getPlayer().getInventory().addItem(new ItemStack(Material.STONE_SWORD));
         gamePlayer.getPlayer().teleport(map.getRedTeamSpawn());
         gamePlayer.getPlayer().sendMessage("You are a red King");
     }
@@ -360,7 +389,35 @@ public class GameManager {
 		return true;
 	}
 
-
+	public void checkMovement() {
+		Bukkit.getScheduler().scheduleSyncRepeatingTask(kingAttack, new Runnable() {
+			@Override
+			public void run() {
+				for (GamePlayer gamePlayer : gamePlayerList) {
+					//Make sure game is started to prevent conflict with spectators
+					if (gameStarted && gamePlayer.getType() == GamePlayer.Type.King) {
+						//Game just started or he just joined, he cannot be out of bounds
+						if (gamePlayer.getPrevLoc() == null) {
+							if (!insideBuildZone(gamePlayer.getPlayer().getLocation())) {
+								gamePlayer.setPrevLoc(gamePlayer.getPlayer().getLocation());
+								return;
+							} else {
+								gamePlayer.getPlayer().kickPlayer("Illegal movement!");
+							}
+						}
+						//PrevLoc is not null
+						if (insideBuildZone(gamePlayer.getPlayer().getLocation())) {
+							//Move them to previous location
+							gamePlayer.getPlayer().teleport(gamePlayer.getPrevLoc());
+						} else {
+							//Update their new location
+							gamePlayer.setPrevLoc(gamePlayer.getPlayer().getLocation());
+						}
+					}
+				}
+			}
+		}, 0, 10);
+	}
 
 
 	//*************************************************//
@@ -468,6 +525,19 @@ public class GameManager {
 		}
 
 		return c;
+	}
+
+	//Set armour shortcut
+	private void setArmour(Player player, Material helmet, Material chestplate, Material leggings, Material boots) {
+		ItemStack helmetItem = new ItemStack(helmet);
+		ItemStack chestplateItem = new ItemStack(chestplate);
+		ItemStack leggingsItem = new ItemStack(leggings);
+		ItemStack bootsItem = new ItemStack(boots);
+
+		player.getInventory().setHelmet(helmetItem);
+		player.getInventory().setChestplate(chestplateItem);
+		player.getInventory().setLeggings(leggingsItem);
+		player.getInventory().setBoots(bootsItem);
 	}
 
 

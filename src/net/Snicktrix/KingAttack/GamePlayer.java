@@ -1,5 +1,6 @@
 package net.Snicktrix.KingAttack;
 
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 /**
@@ -20,6 +21,7 @@ public class GamePlayer {
     private Player player;
     private Type type;
     private Team team;
+	private Location prevLoc;
 
     public GamePlayer(Player player, Type type, Team team) {
         this.player = player;
@@ -35,7 +37,15 @@ public class GamePlayer {
         this.team = team;
     }
 
-    public Type getType() {
+	public Location getPrevLoc() {
+		return prevLoc;
+	}
+
+	public void setPrevLoc(Location prevLoc) {
+		this.prevLoc = prevLoc;
+	}
+
+	public Type getType() {
 
         return type;
     }

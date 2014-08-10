@@ -65,6 +65,46 @@ public class GameManager {
         }
     }
 
+
+	//The game has already started
+	//Auto assign the player to be a Knight
+	//Game would be over if a knight wasn't there
+	private void joinStartedGame(GamePlayer gamePlayer) {
+		if (gamePlayer.getTeam() == GamePlayer.Team.Blue) {
+			gamePlayer.setType(GamePlayer.Type.Knight);
+			setupBlueKnight(gamePlayer);
+		} else if (gamePlayer.getTeam() == GamePlayer.Team.Red) {
+			gamePlayer.setType(GamePlayer.Type.Knight);
+			setupRedKnight(gamePlayer);
+		}
+	}
+
+	//Use to start the actual game
+	private void startGame() {
+		debug(ChatColor.RED + "STARTING GAME");
+		gameStarted = true;
+
+		//Make first player a King
+		blueTeam.get(0).setType(GamePlayer.Type.King);
+		redTeam.get(0).setType(GamePlayer.Type.King);
+
+		for (GamePlayer gamePlayer : blueTeam) {
+			if (gamePlayer.getType() == GamePlayer.Type.King) {
+				setupBlueKing(gamePlayer);
+			} else {
+				setupBlueKnight(gamePlayer);
+			}
+		}
+		for (GamePlayer gamePlayer : redTeam) {
+			if (gamePlayer.getType() == GamePlayer.Type.King) {
+				setupRedKing(gamePlayer);
+			} else {
+				setupRedKnight(gamePlayer);
+			}
+		}
+
+	}
+
     public boolean onSameTeam(Player player1, Player player2) {
         GamePlayer gamePlayer1 = getGamePlayerFromPlayer(player1);
         GamePlayer gamePlayer2 = getGamePlayerFromPlayer(player2);
@@ -130,39 +170,6 @@ public class GameManager {
             return true;
         }
         return false;
-    }
-
-    //Use to start the actual game
-    private void startGame() {
-		debug(ChatColor.RED + "STARTING GAME");
-        gameStarted = true;
-
-        //Make first player a King
-        blueTeam.get(0).setType(GamePlayer.Type.King);
-        redTeam.get(0).setType(GamePlayer.Type.King);
-
-        for (GamePlayer gamePlayer : blueTeam) {
-            if (gamePlayer.getType() == GamePlayer.Type.Knight) setupBlueKnight(gamePlayer);
-            else if (gamePlayer.getType() == GamePlayer.Type.King) setupBlueKing(gamePlayer);
-        }
-        for (GamePlayer gamePlayer : redTeam) {
-            if (gamePlayer.getType() == GamePlayer.Type.Knight) setupRedKnight(gamePlayer);
-            else if (gamePlayer.getType() == GamePlayer.Type.King) setupRedKing(gamePlayer);
-        }
-
-    }
-
-    //The game has already started
-    //Auto assign the player to be a Knight
-    //Game would be over if a knight wasn't there
-    private void joinStartedGame(GamePlayer gamePlayer) {
-        if (gamePlayer.getTeam() == GamePlayer.Team.Blue) {
-            gamePlayer.setType(GamePlayer.Type.Knight);
-            setupBlueKnight(gamePlayer);
-        } else if (gamePlayer.getTeam() == GamePlayer.Team.Red) {
-            gamePlayer.setType(GamePlayer.Type.Knight);
-            setupRedKnight(gamePlayer);
-        }
     }
 
 	public void leaveGame(Player player) {

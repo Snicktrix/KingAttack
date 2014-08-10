@@ -54,6 +54,11 @@ public class Events implements Listener {
 	//Friendly Fire
 	@EventHandler
 	public void onPlayerHit(EntityDamageByEntityEvent event) {
+		//No hitting before game is started
+		if (!kingAttack.gameManager.isGameStarted()) {
+			event.setCancelled(true);
+			return;
+		}
 		if (event.getEntity() instanceof Player && event.getDamager() instanceof Player) {
 			Player hurt = (Player) event.getEntity();
 			Player attacker = (Player) event.getDamager();

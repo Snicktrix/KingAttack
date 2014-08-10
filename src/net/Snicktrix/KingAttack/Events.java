@@ -13,6 +13,7 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
+import org.kitteh.tag.AsyncPlayerReceiveNameTagEvent;
 
 /**
  * Created by Luke on 8/7/14.
@@ -60,6 +61,17 @@ public class Events implements Listener {
 			event.setFormat(ChatColor.BLUE + "%s" + ChatColor.GRAY + ": %s");
 		} else if (team == GamePlayer.Team.Red) {
 			event.setFormat(ChatColor.RED + "%s" + ChatColor.GRAY + ": %s");
+		}
+	}
+
+	@EventHandler
+	public void onNameTag(AsyncPlayerReceiveNameTagEvent event) {
+		GamePlayer.Team team = kingAttack.gameManager.getTeam(event.getPlayer());
+
+		if (team == GamePlayer.Team.Blue) {
+			event.setTag(ChatColor.BLUE + event.getNamedPlayer().getName());
+		} else if (team == GamePlayer.Team.Red) {
+			event.setTag(ChatColor.RED + event.getNamedPlayer().getName());
 		}
 	}
 

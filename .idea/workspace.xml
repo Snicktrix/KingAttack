@@ -45,8 +45,8 @@
       <file leaf-file-name="GameManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-109.46154" vertical-offset="3724" max-vertical-offset="7290">
-              <caret line="489" column="84" selection-start-line="489" selection-start-column="79" selection-end-line="489" selection-end-column="84" />
+            <state vertical-scroll-proportion="-6.769231" vertical-offset="4234" max-vertical-offset="7260">
+              <caret line="316" column="9" selection-start-line="316" selection-start-column="9" selection-end-line="316" selection-end-column="9" />
               <folding>
                 <element signature="e#639#651#0" expanded="true" />
                 <element signature="e#3268#3269#0" expanded="true" />
@@ -66,8 +66,8 @@
       <file leaf-file-name="Events.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17156863" vertical-offset="255" max-vertical-offset="2295">
-              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.7058824" vertical-offset="303" max-vertical-offset="2310">
+              <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -489,7 +489,11 @@
       <created>1407697569390</created>
       <updated>1407697569390</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added King prefixes and tab colors">
+      <created>1407698986129</created>
+      <updated>1407698986129</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -554,14 +558,15 @@
     <MESSAGE value="Bug fixes for games over 2 players large" />
     <MESSAGE value="Added chat colors to match team color" />
     <MESSAGE value="Added colored name tags" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added colored name tags" />
+    <MESSAGE value="Added King prefixes and tab colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added King prefixes and tab colors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java</url>
-          <line>438</line>
+          <line>436</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -1041,8 +1046,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-109.46154" vertical-offset="3724" max-vertical-offset="7290">
-          <caret line="489" column="84" selection-start-line="489" selection-start-column="79" selection-end-line="489" selection-end-column="84" />
+        <state vertical-scroll-proportion="-6.769231" vertical-offset="4234" max-vertical-offset="7260">
+          <caret line="316" column="9" selection-start-line="316" selection-start-column="9" selection-end-line="316" selection-end-column="9" />
           <folding>
             <element signature="e#639#651#0" expanded="true" />
             <element signature="e#3268#3269#0" expanded="true" />
@@ -1060,8 +1065,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17156863" vertical-offset="255" max-vertical-offset="2295">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.7058824" vertical-offset="303" max-vertical-offset="2310">
+          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
           <folding />
         </state>
       </provider>

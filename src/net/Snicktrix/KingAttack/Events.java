@@ -51,6 +51,7 @@ public class Events implements Listener {
 	@EventHandler
 	public void onRespawn(PlayerRespawnEvent event) {
 		event.setRespawnLocation(kingAttack.gameManager.getRespawnLocation(event.getPlayer()));
+		kingAttack.gameManager.respawnGear(event.getPlayer());
 	}
 
 	@EventHandler

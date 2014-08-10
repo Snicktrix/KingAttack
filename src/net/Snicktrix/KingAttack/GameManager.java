@@ -314,8 +314,6 @@ public class GameManager {
 
 			//Make this players team lose
 			endGameWithLosingTeam(deadGamePlayer.getTeam());
-		} else {
-			respawnGear(deadPlayer);
 		}
 	}
 

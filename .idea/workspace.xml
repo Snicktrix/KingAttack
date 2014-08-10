@@ -8,9 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cd537ec4-d84b-4896-b1c7-081460722086" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" afterPath="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config.yml" afterPath="$PROJECT_DIR$/src/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="KingAttack.iws" />
@@ -37,17 +34,17 @@
       <file leaf-file-name="KingAttack.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="600">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
               <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameManager.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GameManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3505843" vertical-offset="5460" max-vertical-offset="6615">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5460" max-vertical-offset="6615">
               <caret line="429" column="56" selection-start-line="429" selection-start-column="56" selection-end-line="429" selection-end-column="56" />
               <folding>
                 <element signature="e#6448#6484#0" expanded="false" />
@@ -70,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigData.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ConfigData.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1245">
-              <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.65108514" vertical-offset="540" max-vertical-offset="1290">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -135,9 +132,9 @@
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GamePlayer.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java" />
         <option value="$PROJECT_DIR$/src/config.yml" />
-        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Map.java" />
         <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java" />
+        <option value="$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java" />
       </list>
     </option>
   </component>
@@ -444,7 +441,11 @@
       <created>1407691603669</created>
       <updated>1407691603669</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added Minimum game size to config. Added out of bounds message to kings">
+      <created>1407692299087</created>
+      <updated>1407692299087</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -502,7 +503,9 @@
     <MESSAGE value="re-coded out of bounds system by using a runnable and fixed world regen issues" />
     <MESSAGE value="Respawn with gear&#10;Clear potion effects on join/respawn&#10;Max out health/food on join/respawn" />
     <MESSAGE value="Fixed bug where king not being killed from a player wouldn't end game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug where king not being killed from a player wouldn't end game" />
+    <MESSAGE value="Added Minimum game size to config. Added out of bounds message to kigns" />
+    <MESSAGE value="Added Minimum game size to config. Added out of bounds message to kings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Minimum game size to config. Added out of bounds message to kings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -912,26 +915,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GamePlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="900">
           <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -944,14 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1245">
-          <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/Events.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="1350">
@@ -960,9 +939,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/KingAttack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/GameManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3505843" vertical-offset="5460" max-vertical-offset="6615">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5460" max-vertical-offset="6615">
           <caret line="429" column="56" selection-start-line="429" selection-start-column="56" selection-end-line="429" selection-end-column="56" />
           <folding>
             <element signature="e#6448#6484#0" expanded="false" />
@@ -971,6 +966,14 @@
             <element signature="method#randomFirework#0;class#GameManager#0" expanded="false" />
             <element signature="method#getColor#0;class#GameManager#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Snicktrix/KingAttack/ConfigData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65108514" vertical-offset="540" max-vertical-offset="1290">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -60,6 +60,9 @@ public class ConfigData {
 		//Make sure world does not auto save
 		Bukkit.getWorld(worldName).setAutoSave(false);
 
+		Bukkit.getWorld(worldName).setGameRuleValue("doDaylightCycle", "false");
+		Bukkit.getWorld(worldName).setGameRuleValue("doMobSpawning", "false");
+
 		//Create Locations for each Spawn Point
 		//We will use the default world
 		Location blueTeamSpawn = new Location(Bukkit.getWorld(worldName), blueSpawnX, blueSpawnY, blueSpawnZ);

@@ -82,6 +82,16 @@ public class Events implements Listener {
 
 	@EventHandler
 	public void onBlockBreak(BlockBreakEvent event) {
+		//Game has not started.
+		if (!kingAttack.gameManager.isGameStarted()) {
+			event.setCancelled(true);
+			return;
+		}
+
+		if (kingAttack.gameManager.isSpectator(event.getPlayer())) {
+			event.setCancelled(true);
+		}
+
 		if (!this.kingAttack.gameManager.insideBuildZone(event.getBlock().getLocation())) {
 			event.setCancelled(true);
 			event.getPlayer().sendMessage(ChatColor.RED + "You can only break blocks in the middle zone");
@@ -90,6 +100,16 @@ public class Events implements Listener {
 
 	@EventHandler
 	public void onBlockPlace(BlockPlaceEvent event) {
+		//Game has not started.
+		if (!kingAttack.gameManager.isGameStarted()) {
+			event.setCancelled(true);
+			return;
+		}
+
+		if (kingAttack.gameManager.isSpectator(event.getPlayer())) {
+			event.setCancelled(true);
+		}
+
 		if (!this.kingAttack.gameManager.insideBuildZone(event.getBlock().getLocation())) {
 			event.setCancelled(true);
 			event.getPlayer().sendMessage(ChatColor.RED + "You can only place blocks in the middle zone");

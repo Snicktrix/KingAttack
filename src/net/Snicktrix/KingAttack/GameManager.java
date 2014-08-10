@@ -88,6 +88,19 @@ public class GameManager {
 		}
 	}
 
+	public boolean isGameStarted() {
+		return gameStarted;
+	}
+
+	public boolean isSpectator(Player player) {
+		GamePlayer gamePlayer = getGamePlayerFromPlayer(player);
+
+		if (gamePlayer.getType() == GamePlayer.Type.Spectator) {
+			return true;
+		}
+		return false;
+	}
+
     private GamePlayer getGamePlayerFromPlayer(Player player) {
         for (GamePlayer gamePlayer : this.gamePlayerList) {
             if (gamePlayer.getPlayer() == player) {
@@ -97,7 +110,7 @@ public class GameManager {
         return null;
     }
 
-    private GamePlayer.Team findTeam() {
+	private GamePlayer.Team findTeam() {
         if (this.blueTeam.size() <= this.redTeam.size()) {
             //Blue Team
             return GamePlayer.Team.Blue;
@@ -378,6 +391,10 @@ public class GameManager {
     //******* SPECTATOR *******//
 
     private void setupSpectator(GamePlayer gamePlayer) {
+
+		clearPotions(gamePlayer.getPlayer());
+		gamePlayer.getPlayer().setHealth(gamePlayer.getPlayer().getMaxHealth());
+		gamePlayer.getPlayer().setFoodLevel(20);
 
 		gamePlayer.getPlayer().getInventory().clear();
 		gamePlayer.getPlayer().getInventory().setArmorContents(null);

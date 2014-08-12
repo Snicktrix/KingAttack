@@ -8,6 +8,9 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.FireworkMeta;
 import org.bukkit.potion.PotionEffect;
 
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -243,12 +246,24 @@ public class GameManager {
 			public void run() {
 
 				//Kick all players into lobby server
-				//BungeeLobbyKick plugin
+				//BungeeLobbyKick plugin for servers other than arcade.snicktrix.net
 				if (!Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "lobbykick")) {
-					//In case the above method doesn't work
+
 					for (Player player : Bukkit.getOnlinePlayers()) {
-						player.kickPlayer("Restarting Game");
+						ByteArrayOutputStream b = new ByteArrayOutputStream();
+						DataOutputStream out = new DataOutputStream(b);
+
+						try {
+							out.writeUTF("Connect");
+							out.writeUTF("lobby"); // Target Server
+						} catch (IOException e) {
+							// Can never happen
+						}
+						player.sendPluginMessage(kingAttack, "BungeeCord", b.toByteArray());
 					}
+
+
+
 				}
 				resetGame();
 			}

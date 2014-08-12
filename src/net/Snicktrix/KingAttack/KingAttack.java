@@ -27,6 +27,8 @@ public class KingAttack extends JavaPlugin {
 
 		this.gameManager = new GameManager(this, map, 2, 10);
 
+		Bukkit.getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
+
         //Finished!
         System.out.println("KingAttack successfully loaded");
     }
